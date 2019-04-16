@@ -2250,7 +2250,7 @@ var Index = function Index(props) {
         lineNumber: 20
       },
       __self: this
-    }, show.name)));
+    }, show.PLAYER_NAME)));
   })), "HEAT WISDOM CORNER", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_quote__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -2271,7 +2271,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('https://api.tvmaze.com/search/shows?q=batman');
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('http://localhost:8000/heatculture/ranking?format=json');
 
         case 2:
           res = _context.sent;
@@ -2282,8 +2282,8 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
           data = _context.sent;
           console.log("Show data fetched. Count: ".concat(data.length));
           return _context.abrupt("return", {
-            shows: data.map(function (entry) {
-              return entry.show;
+            shows: data.HustleStats.map(function (entry) {
+              return entry;
             })
           });
 
