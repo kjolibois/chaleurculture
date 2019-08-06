@@ -10,7 +10,6 @@ class UpdatePanel extends Component {
             content: "Content from state...",
             status:"",
             advancedstatsupdate:"",
-            stuff:"banna"
          };
       }
  
@@ -20,7 +19,6 @@ class UpdatePanel extends Component {
       this.setState({
           
         status: props.data,
-      stuff:"banna"
       });
       
     }
@@ -45,10 +43,9 @@ class UpdatePanel extends Component {
            });
   
           const data = await res.json()
-          this.setState({
-              stuff:data.length
-          });
+          
           console.log(data); 
+         
           }
     componentDidMount(props) {
         const _this = this;

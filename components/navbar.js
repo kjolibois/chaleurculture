@@ -24,6 +24,8 @@ export default class ExNav extends React.Component {
       isOpen: false
     };
   }
+
+  
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -32,18 +34,26 @@ export default class ExNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar style={{'background-color':'#F9A01B'}}light expand="md">
+          <NavbarBrand style={{color:'#98002E'}}href="/">Culture Rank</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+              <NavItem> 
+                  <Link href="/">
+                    <a >Home</a>
+                  </Link>  
+              </NavItem>
               <NavItem> 
                   <Link href="/admin">
                     <a >Admin</a>
                   </Link>  
               </NavItem>
-            
-          
+              <NavItem> 
+                  <Link href="/zillna">
+                    <a >ZNA</a>
+                  </Link>  
+              </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
               </NavItem>

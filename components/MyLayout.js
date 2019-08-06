@@ -21,6 +21,14 @@ const Layout = props => (
         bottom: 0px;
         right: 0px; 
     }`}   </style>
+    <footer style={{'background-color':'#F9A01B',textAlign:'center',marginTop:'15px'}} className="footer fixed-bottom">
+    
+  <div className="container">
+    <span className="text-muted">A K.J joint.</span><br/>
+    <span className="text-muted">Corner 63 + Noble Assemblee + L.O.N+ 55th Ave LSA</span>
+
+  </div>
+</footer>
   </div>
 )
 
